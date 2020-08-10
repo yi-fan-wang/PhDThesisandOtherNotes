@@ -1,0 +1,95 @@
+\documentclass[12pt]{report}
+
+%\usepackage[UTF8]{ctex}
+%\usepackage{CJKutf8}
+%\usepackage[noconfigs,english]{babel}
+
+\usepackage{xeCJK}
+%\setCJKmainfont{SimHei}
+\setCJKmainfont{SimSun}
+
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\hypersetup{
+     breaklinks,
+     colorlinks   = true,
+     citecolor    = blue,
+     linkcolor    = red
+}
+
+%\usepackage[]{natbib}
+\usepackage{lscape}
+\usepackage{bm}
+\usepackage{mathrsfs}
+\usepackage{booktabs}
+\usepackage[capitalise]{cleveref}
+\crefname{figure}{Fig.}{Figs.}
+\Crefname{figure}{Fig.}{Figs.}
+
+\ExecuteOptions{dvips} \marginparwidth 0pt \oddsidemargin 0.5 truecm
+\evensidemargin 1.5 truecm \marginparsep 0pt \topmargin 0pt
+\textheight 22.0 truecm \textwidth 14.5 truecm
+\renewcommand{\baselinestretch}{1.5}
+
+\newcommand{\chapterend}{
+	\vfill
+	\noindent\rule{\textwidth}{0.5mm} \\
+	\noindent{\large\bf $\Box$ End of chapter.}
+}
+
+\newcommand*{\mkred}[1]{{\color{red}{#1}}}
+\def\question{{\color{red}{(?)}}}
+\usepackage{array}
+
+
+%===============
+
+\usepackage{fancyhdr}  
+\usepackage{lastpage}                                           
+\usepackage{layout}   
+%=======================================================
+
+\input{acronym}
+
+%=======================================================
+
+\begin{document}
+
+%=======================================================
+
+%cover page information
+
+\input{cover}
+
+\newpage
+
+\tableofcontents
+%{\large {\tableofcontents}}
+
+%\newpage
+%\listoffigures
+
+%\newpage
+%\listoftables
+
+%=======================================================
+
+%initialization
+
+\newpage
+\setcounter{page}{0} \pagenumbering{arabic} %\pagestyle{headings}
+
+
+\pagestyle{fancy}     
+\fancyhf{}              
+\fancyhead[CE,CO]{\rightmark}
+%\lhead{}
+%\chead{}
+%\rhead{}
+%\renewcommand{\headrulewidth}{0.4pt} 
+\cfoot{Page \thepage}
+%\fancyfoot[LE,RO]{\thepage}
