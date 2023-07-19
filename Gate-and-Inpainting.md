@@ -58,7 +58,7 @@ It's interesting to prove that, after acting $F$ on $n$, any elements in the gat
 $$
 (AA^Tn)^T C^{-1} Fn = n^T AA^T C^{-1}(1- AM^{-1} A^TC^{-1})n \\
 = n^TAA^T C^{-1}n - n^TAA^TC^{-1}A (A^T C^{-1}A)^{-1}A^T C^{-1} n \\
-n^T AA^T C^{-1}n - n^T AA^T C^{-1}n = 0
+= n^T AA^T C^{-1}n - n^T AA^T C^{-1}n = 0
 $$
 
 By construction, no matter what data values are in the gated region, they don't impact the computation of likelihood.
